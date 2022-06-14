@@ -76,7 +76,7 @@ Encontradas as células, mais uma função aplicada para realizar a substituiç�
 
 Tendo as atividades categorizadas, podemos agora cruzar as duas colunas para identificar quais delas acabam sendo mais provocativas aos tubarões.
 
-As 10 atividades com maior ocorrência de ataques de tubarão são:
+As 10 atividades com maior ocorrência de ataques de tubarão são (em %):
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -128,7 +128,7 @@ As 10 atividades com maior ocorrência de ataques de tubarão são:
   </tbody>
 </table>
 
-Quando filtramos as ocorrências pelos casos 'Provoked' temos que:
+Quando filtramos as ocorrências pelos casos 'Provoked' temos que (em %):
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
