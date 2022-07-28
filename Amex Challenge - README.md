@@ -44,7 +44,9 @@ Due to the size of the databases provided by Amex, pandas couldn't read the file
 Dask is a Python parallel computing library that helps in scalling codes and machine learning workflows. It enables you to read large datasets by dividing it into partitions and also offers familiar user interface by mirroring other APIs including: pandas, scikit-learn and numpy
 
 `amex_train_data = dd.read_csv('amex-default-prediction/train_data.csv')`
+
 `amex_labels = dd.read_csv('amex-default-prediction/train_labels.csv')`
+
 `amex_test_data = dd.read_csv('amex-default-prediction/test_data.csv')`
 
 ## First baseline model
