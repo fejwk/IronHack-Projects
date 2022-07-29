@@ -27,7 +27,7 @@ Files
 
 `Target = 1` meaning the the customer can be a future payment default.
 
-## Methodologies
+## Libraries
 
 For this project the following libraries were used:
 - pandas and numpy
