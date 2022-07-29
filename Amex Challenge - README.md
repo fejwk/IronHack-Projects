@@ -180,6 +180,8 @@ When evaluating with other metrics, the model appears to be non-efficient.
 
 `plot_roc_curve(lrmodel, X_train, y_train)`
 
+![image](https://user-images.githubusercontent.com/105675184/181687701-8fb9678f-ddc8-42e0-b1a5-6f82a9065d37.png)
+
 ##### Predicting with PCA test data
 
 Predicting the target for PCA test dataset:
@@ -221,9 +223,10 @@ After the treatment both dataframes were exported to be used in Pycaret's ML lib
 The data had to be exported and imported due to Pycaret running in a different environment that the codes above.
 
 `data_train = pd.read_csv('new_train_treated.csv')`
+
 `data_test = pd.read_csv('new_test_treated.csv')`
 
-
+Pycaret classification only took arguments related to selecting features with more relevance to the model and removing highly correlated variables that could be sending the same information to the model.
 
 `classification = setup(data = data_train, target = 'target', ignore_features=['customer_ID'], feature_selection=True, remove_multicollinearity=True, n_jobs=-1, use_gpu=True)`
 
@@ -327,7 +330,17 @@ A little improvement in performance is perceived following the tuning step.
       <th id="T_71ffa_level0_col6" class="col_heading level0 col6">MCC</th>
     </tr>
     <tr>
-      <th id="T_71ffa_level0_row10" class="row_heading level0 row10">Mean</th>
+      <th id="T_71ffa_level0_row11" class="row_heading level0 row11">Old LGBM</th>
+      <td id="T_71ffa_row11_col0" class="data row11 col0">0.8900</td>
+      <td id="T_71ffa_row11_col1" class="data row11 col1">0.9516</td>
+      <td id="T_71ffa_row11_col2" class="data row11 col2">0.7855</td>
+      <td id="T_71ffa_row11_col3" class="data row11 col3">0.7915</td>
+      <td id="T_71ffa_row11_col4" class="data row11 col4">0.7885</td>
+      <td id="T_71ffa_row11_col5" class="data row11 col5">0.7142</td>
+      <td id="T_71ffa_row11_col6" class="data row11 col6">0.7142</td>
+    </tr>
+    <tr>
+      <th id="T_71ffa_level0_row10" class="row_heading level0 row10">New LGBM</th>
       <td id="T_71ffa_row10_col0" class="data row10 col0">0.8923</td>
       <td id="T_71ffa_row10_col1" class="data row10 col1">0.9530</td>
       <td id="T_71ffa_row10_col2" class="data row10 col2">0.7897</td>
@@ -336,26 +349,19 @@ A little improvement in performance is perceived following the tuning step.
       <td id="T_71ffa_row10_col5" class="data row10 col5">0.7186</td>
       <td id="T_71ffa_row10_col6" class="data row10 col6">0.7186</td>
     </tr>
-    <tr>
-      <th id="T_71ffa_level0_row11" class="row_heading level0 row11">Std</th>
-      <td id="T_71ffa_row11_col0" class="data row11 col0">0.0017</td>
-      <td id="T_71ffa_row11_col1" class="data row11 col1">0.0012</td>
-      <td id="T_71ffa_row11_col2" class="data row11 col2">0.0050</td>
-      <td id="T_71ffa_row11_col3" class="data row11 col3">0.0044</td>
-      <td id="T_71ffa_row11_col4" class="data row11 col4">0.0034</td>
-      <td id="T_71ffa_row11_col5" class="data row11 col5">0.0045</td>
-      <td id="T_71ffa_row11_col6" class="data row11 col6">0.0045</td>
-    </tr>
   </tbody>
 </table>
 
 *Quick reminder:
+
 Recall: of all of the default customers, how many were predicted as default?
+
 Precision: of all of the default predictions, how many were actual defaults?*
 
 With this new model, Recall and Precision metrics shown considerable better performance in comparison to the Logistic Regression built before. 
 
 **Recall**: aprox. 8 out of 10 default customers were predicted.
+
 **Precision**: aprox. 8 out of 10 default predictions, were correct.
 
 A high AUC metric means that the model has good capacity to differentiate between positive and negative targets.
@@ -368,25 +374,25 @@ According to the features importance graphic, it is possible to infer that Delin
 ![image](https://user-images.githubusercontent.com/105675184/181684176-e5ee897b-8648-4579-b1f6-115c436172f2.png)
 
 
---- LOST DATA ---
-
 The tuned model was then used to predict the probabilities of future defaults for each customer. By appending the `.predict_proba`s to the test dataset, it is now possible to upload the new model in Amex Challenge in Kaggle.
 
-print da pontuacao
-
 The overall score for the predictive model developed in this analysis was 0.75.
+
+![image](https://user-images.githubusercontent.com/105675184/181684926-cda79666-ff6d-4b45-9d9a-e38e141f1bfe.png)
+
 
 ## Learnings & Conclusions
 
 - When manipulating large datasets, it is possible to make use of alternative tools, such as Dask;
 - Specifically for competitions, dropping rows due to null values, can lead you to a predictive model without scores;
 - In this study, Logistic Regression combined with PCA reductions leaves too much gaps for the company to lose money;
-- Light Gradient Boost Machine proved to be the best model to all the relevant metrics;
+- Light Gradient Boost Machine proved to be the best model considering all the relevant metrics;
 - The most important features are related to Balance and Deliquency variables.
 
 ## Next steps
 
-Go back to data manipulation step and treat nulls with other strategies such as median, mode and KNN Imputer and compare the score with the developed models.
+- Go back to data manipulation step and treat nulls with other strategies such as median, mode and KNN Imputer and compare the score with the developed models.
+- Explore data modelling with time series
 
 
 
