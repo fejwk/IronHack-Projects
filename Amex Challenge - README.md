@@ -352,11 +352,11 @@ A little improvement in performance is perceived following the tuning step.
   </tbody>
 </table>
 
-*Quick reminder:
+*Quick reminder:*
 
-Recall: of all of the default customers, how many were predicted as default?
+*Recall: of all of the default customers, how many were predicted as default?*
 
-Precision: of all of the default predictions, how many were actual defaults?*
+*Precision: of all of the default predictions, how many were actual defaults?*
 
 With this new model, Recall and Precision metrics shown considerable better performance in comparison to the Logistic Regression built before. 
 
