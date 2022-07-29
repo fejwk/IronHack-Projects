@@ -373,6 +373,10 @@ According to the features importance graphic, it is possible to infer that Delin
 
 ![image](https://user-images.githubusercontent.com/105675184/181684176-e5ee897b-8648-4579-b1f6-115c436172f2.png)
 
+The learning curve graphic appears to show that the model still have space to learn more and get better scores for the same data used until now.
+
+![image](https://user-images.githubusercontent.com/105675184/181690630-9363e509-7780-4ab8-8be0-9c84131d6eec.png)
+
 
 The tuned model was then used to predict the probabilities of future defaults for each customer. By appending the `.predict_proba`s to the test dataset, it is now possible to upload the new model in Amex Challenge in Kaggle.
 
@@ -393,6 +397,4 @@ The overall score for the predictive model developed in this analysis was 0.75.
 
 - Go back to data manipulation step and treat nulls with other strategies such as median, mode and KNN Imputer and compare the score with the developed models.
 - Explore data modelling with time series
-
-
-
+- Run more training iterations and folds in order to maximize the model's learning curve.
