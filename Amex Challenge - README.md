@@ -227,81 +227,75 @@ The data had to be exported and imported due to Pycaret running in a different e
 
 `classification = setup(data = data_train, target = 'target', ignore_features=['customer_ID'], feature_selection=True, remove_multicollinearity=True, n_jobs=-1, use_gpu=True)`
 
-<table id="T_86267">
+<table id="T_6840c">
   <thead>
     <tr>
       <th class="blank level0">&nbsp;</th>
-      <th id="T_86267_level0_col0" class="col_heading level0 col0">Model</th>
-      <th id="T_86267_level0_col1" class="col_heading level0 col1">Accuracy</th>
-      <th id="T_86267_level0_col2" class="col_heading level0 col2">AUC</th>
-      <th id="T_86267_level0_col3" class="col_heading level0 col3">Recall</th>
-      <th id="T_86267_level0_col4" class="col_heading level0 col4">Prec.</th>
-      <th id="T_86267_level0_col5" class="col_heading level0 col5">F1</th>
-      <th id="T_86267_level0_col6" class="col_heading level0 col6">Kappa</th>
-      <th id="T_86267_level0_col7" class="col_heading level0 col7">MCC</th>
-      <th id="T_86267_level0_col8" class="col_heading level0 col8">TT (Sec)</th>
+      <th id="T_6840c_level0_col0" class="col_heading level0 col0">Model</th>
+      <th id="T_6840c_level0_col1" class="col_heading level0 col1">Accuracy</th>
+      <th id="T_6840c_level0_col2" class="col_heading level0 col2">AUC</th>
+      <th id="T_6840c_level0_col3" class="col_heading level0 col3">Recall</th>
+      <th id="T_6840c_level0_col4" class="col_heading level0 col4">Prec.</th>
+      <th id="T_6840c_level0_col5" class="col_heading level0 col5">F1</th>
+      <th id="T_6840c_level0_col6" class="col_heading level0 col6">Kappa</th>
+      <th id="T_6840c_level0_col7" class="col_heading level0 col7">MCC</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_86267_level0_row0" class="row_heading level0 row0">lightgbm</th>
-      <td id="T_86267_row0_col0" class="data row0 col0">Light Gradient Boosting Machine</td>
-      <td id="T_86267_row0_col1" class="data row0 col1">0.8896</td>
-      <td id="T_86267_row0_col2" class="data row0 col2">0.9510</td>
-      <td id="T_86267_row0_col3" class="data row0 col3">0.7864</td>
-      <td id="T_86267_row0_col4" class="data row0 col4">0.7862</td>
-      <td id="T_86267_row0_col5" class="data row0 col5">0.7863</td>
-      <td id="T_86267_row0_col6" class="data row0 col6">0.7119</td>
-      <td id="T_86267_row0_col7" class="data row0 col7">0.7119</td>
-      <td id="T_86267_row0_col8" class="data row0 col8">11.7400</td>
+      <th id="T_6840c_level0_row0" class="row_heading level0 row0">lightgbm</th>
+      <td id="T_6840c_row0_col0" class="data row0 col0">Light Gradient Boosting Machine</td>
+      <td id="T_6840c_row0_col1" class="data row0 col1">0.8900</td>
+      <td id="T_6840c_row0_col2" class="data row0 col2">0.9516</td>
+      <td id="T_6840c_row0_col3" class="data row0 col3">0.7855</td>
+      <td id="T_6840c_row0_col4" class="data row0 col4">0.7915</td>
+      <td id="T_6840c_row0_col5" class="data row0 col5">0.7885</td>
+      <td id="T_6840c_row0_col6" class="data row0 col6">0.7142</td>
+      <td id="T_6840c_row0_col7" class="data row0 col7">0.7142</td>
     </tr>
     <tr>
-      <th id="T_86267_level0_row1" class="row_heading level0 row1">gbc</th>
-      <td id="T_86267_row1_col0" class="data row1 col0">Gradient Boosting Classifier</td>
-      <td id="T_86267_row1_col1" class="data row1 col1">0.8846</td>
-      <td id="T_86267_row1_col2" class="data row1 col2">0.9467</td>
-      <td id="T_86267_row1_col3" class="data row1 col3">0.7740</td>
-      <td id="T_86267_row1_col4" class="data row1 col4">0.7778</td>
-      <td id="T_86267_row1_col5" class="data row1 col5">0.7759</td>
-      <td id="T_86267_row1_col6" class="data row1 col6">0.6982</td>
-      <td id="T_86267_row1_col7" class="data row1 col7">0.6982</td>
-      <td id="T_86267_row1_col8" class="data row1 col8">1413.0500</td>
+      <th id="T_6840c_level0_row1" class="row_heading level0 row1">gbc</th>
+      <td id="T_6840c_row1_col0" class="data row1 col0">Gradient Boosting Classifier</td>
+      <td id="T_6840c_row1_col1" class="data row1 col1">0.8851</td>
+      <td id="T_6840c_row1_col2" class="data row1 col2">0.9472</td>
+      <td id="T_6840c_row1_col3" class="data row1 col3">0.7718</td>
+      <td id="T_6840c_row1_col4" class="data row1 col4">0.7845</td>
+      <td id="T_6840c_row1_col5" class="data row1 col5">0.7781</td>
+      <td id="T_6840c_row1_col6" class="data row1 col6">0.7006</td>
+      <td id="T_6840c_row1_col7" class="data row1 col7">0.7006</td>
     </tr>
     <tr>
-      <th id="T_86267_level0_row2" class="row_heading level0 row2">rf</th>
-      <td id="T_86267_row2_col0" class="data row2 col0">Random Forest Classifier</td>
-      <td id="T_86267_row2_col1" class="data row2 col1">0.8830</td>
-      <td id="T_86267_row2_col2" class="data row2 col2">0.9444</td>
-      <td id="T_86267_row2_col3" class="data row2 col3">0.7629</td>
-      <td id="T_86267_row2_col4" class="data row2 col4">0.7792</td>
-      <td id="T_86267_row2_col5" class="data row2 col5">0.7710</td>
-      <td id="T_86267_row2_col6" class="data row2 col6">0.6924</td>
-      <td id="T_86267_row2_col7" class="data row2 col7">0.6925</td>
-      <td id="T_86267_row2_col8" class="data row2 col8">336.2900</td>
+      <th id="T_6840c_level0_row2" class="row_heading level0 row2">rf</th>
+      <td id="T_6840c_row2_col0" class="data row2 col0">Random Forest Classifier</td>
+      <td id="T_6840c_row2_col1" class="data row2 col1">0.8833</td>
+      <td id="T_6840c_row2_col2" class="data row2 col2">0.9452</td>
+      <td id="T_6840c_row2_col3" class="data row2 col3">0.7616</td>
+      <td id="T_6840c_row2_col4" class="data row2 col4">0.7848</td>
+      <td id="T_6840c_row2_col5" class="data row2 col5">0.7730</td>
+      <td id="T_6840c_row2_col6" class="data row2 col6">0.6945</td>
+      <td id="T_6840c_row2_col7" class="data row2 col7">0.6946</td>
     </tr>
     <tr>
-      <th id="T_86267_level0_row3" class="row_heading level0 row3">et</th>
-      <td id="T_86267_row3_col0" class="data row3 col0">Extra Trees Classifier</td>
-      <td id="T_86267_row3_col1" class="data row3 col1">0.8825</td>
-      <td id="T_86267_row3_col2" class="data row3 col2">0.9441</td>
-      <td id="T_86267_row3_col3" class="data row3 col3">0.7615</td>
-      <td id="T_86267_row3_col4" class="data row3 col4">0.7785</td>
-      <td id="T_86267_row3_col5" class="data row3 col5">0.7699</td>
-      <td id="T_86267_row3_col6" class="data row3 col6">0.6910</td>
-      <td id="T_86267_row3_col7" class="data row3 col7">0.6911</td>
-      <td id="T_86267_row3_col8" class="data row3 col8">45.5500</td>
+      <th id="T_6840c_level0_row3" class="row_heading level0 row3">lr</th>
+      <td id="T_6840c_row3_col0" class="data row3 col0">Logistic Regression</td>
+      <td id="T_6840c_row3_col1" class="data row3 col1">0.8829</td>
+      <td id="T_6840c_row3_col2" class="data row3 col2">0.9455</td>
+      <td id="T_6840c_row3_col3" class="data row3 col3">0.7442</td>
+      <td id="T_6840c_row3_col4" class="data row3 col4">0.7941</td>
+      <td id="T_6840c_row3_col5" class="data row3 col5">0.7683</td>
+      <td id="T_6840c_row3_col6" class="data row3 col6">0.6900</td>
+      <td id="T_6840c_row3_col7" class="data row3 col7">0.6907</td>
     </tr>
     <tr>
-      <th id="T_86267_level0_row4" class="row_heading level0 row4">lr</th>
-      <td id="T_86267_row4_col0" class="data row4 col0">Logistic Regression</td>
-      <td id="T_86267_row4_col1" class="data row4 col1">0.8821</td>
-      <td id="T_86267_row4_col2" class="data row4 col2">0.9446</td>
-      <td id="T_86267_row4_col3" class="data row4 col3">0.7454</td>
-      <td id="T_86267_row4_col4" class="data row4 col4">0.7868</td>
-      <td id="T_86267_row4_col5" class="data row4 col5">0.7656</td>
-      <td id="T_86267_row4_col6" class="data row4 col6">0.6869</td>
-      <td id="T_86267_row4_col7" class="data row4 col7">0.6874</td>
-      <td id="T_86267_row4_col8" class="data row4 col8">67.5600</td>
+      <th id="T_6840c_level0_row4" class="row_heading level0 row4">et</th>
+      <td id="T_6840c_row4_col0" class="data row4 col0">Extra Trees Classifier</td>
+      <td id="T_6840c_row4_col1" class="data row4 col1">0.8826</td>
+      <td id="T_6840c_row4_col2" class="data row4 col2">0.9447</td>
+      <td id="T_6840c_row4_col3" class="data row4 col3">0.7596</td>
+      <td id="T_6840c_row4_col4" class="data row4 col4">0.7838</td>
+      <td id="T_6840c_row4_col5" class="data row4 col5">0.7715</td>
+      <td id="T_6840c_row4_col6" class="data row4 col6">0.6925</td>
+      <td id="T_6840c_row4_col7" class="data row4 col7">0.6927</td>
     </tr>
   </tbody>
 </table>
@@ -318,12 +312,22 @@ final_lgbm = finalize_model(lgbm)
 tuned_model = tune_model(lgbm, optimize='AUC')
 ```
 
+Tabela com metricas melhoradas
+
+Graficos de features
+
 --- LOST DATA ---
 
 The tuned model was then used to predict the probabilities of future defaults for each customer. By appending the `.predict_proba`s to the test dataset, it is now possible to upload the new model in Amex Challenge in Kaggle.
 
+print da pontuacao
 
-## Considerações finais
+The overall score for the predictive model developed in this analysis was 0.75.
+
+## Learnings & Conclusions
+
+- Specifically for competitions, dropping rows due to null values, can lead you to a predictive model without scores.
+- 
 
 ## Next steps
 
