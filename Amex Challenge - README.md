@@ -300,7 +300,7 @@ The data had to be exported and imported due to Pycaret running in a different e
   </tbody>
 </table>
 
-The metrics AUC, Recall and Precision are the most relevant for our study and for that reason they were determinant in choosing the best model to be applied.
+The metrics **AUC, Recall and Precision** are the most relevant for our study and for that reason they were determinant in choosing the best model to be applied.
 
 According to the table above the **Light Gradient Boosting Machine (LGBM)** showed the best performance for all three metrics compared to the rest thus being the chosen model.
 
@@ -312,9 +312,61 @@ final_lgbm = finalize_model(lgbm)
 tuned_model = tune_model(lgbm, optimize='AUC')
 ```
 
-Tabela com metricas melhoradas
+A little improvement in performance is perceived following the tuning step.
 
-Graficos de features
+<table id="T_71ffa">
+  <thead>
+    <tr>
+      <th class="blank level0">&nbsp;</th>
+      <th id="T_71ffa_level0_col0" class="col_heading level0 col0">Accuracy</th>
+      <th id="T_71ffa_level0_col1" class="col_heading level0 col1">AUC</th>
+      <th id="T_71ffa_level0_col2" class="col_heading level0 col2">Recall</th>
+      <th id="T_71ffa_level0_col3" class="col_heading level0 col3">Prec.</th>
+      <th id="T_71ffa_level0_col4" class="col_heading level0 col4">F1</th>
+      <th id="T_71ffa_level0_col5" class="col_heading level0 col5">Kappa</th>
+      <th id="T_71ffa_level0_col6" class="col_heading level0 col6">MCC</th>
+    </tr>
+    <tr>
+      <th id="T_71ffa_level0_row10" class="row_heading level0 row10">Mean</th>
+      <td id="T_71ffa_row10_col0" class="data row10 col0">0.8923</td>
+      <td id="T_71ffa_row10_col1" class="data row10 col1">0.9530</td>
+      <td id="T_71ffa_row10_col2" class="data row10 col2">0.7897</td>
+      <td id="T_71ffa_row10_col3" class="data row10 col3">0.7925</td>
+      <td id="T_71ffa_row10_col4" class="data row10 col4">0.7911</td>
+      <td id="T_71ffa_row10_col5" class="data row10 col5">0.7186</td>
+      <td id="T_71ffa_row10_col6" class="data row10 col6">0.7186</td>
+    </tr>
+    <tr>
+      <th id="T_71ffa_level0_row11" class="row_heading level0 row11">Std</th>
+      <td id="T_71ffa_row11_col0" class="data row11 col0">0.0017</td>
+      <td id="T_71ffa_row11_col1" class="data row11 col1">0.0012</td>
+      <td id="T_71ffa_row11_col2" class="data row11 col2">0.0050</td>
+      <td id="T_71ffa_row11_col3" class="data row11 col3">0.0044</td>
+      <td id="T_71ffa_row11_col4" class="data row11 col4">0.0034</td>
+      <td id="T_71ffa_row11_col5" class="data row11 col5">0.0045</td>
+      <td id="T_71ffa_row11_col6" class="data row11 col6">0.0045</td>
+    </tr>
+  </tbody>
+</table>
+
+*Quick reminder:
+Recall: of all of the default customers, how many were predicted as default?
+Precision: of all of the default predictions, how many were actual defaults?*
+
+With this new model, Recall and Precision metrics shown considerable better performance in comparison to the Logistic Regression built before. 
+
+**Recall**: aprox. 8 out of 10 default customers were predicted.
+**Precision**: aprox. 8 out of 10 default predictions, were correct.
+
+A high AUC metric means that the model has good capacity to differentiate between positive and negative targets.
+
+![image](https://user-images.githubusercontent.com/105675184/181684474-639568b4-f744-4b5f-88a9-c8a462e55599.png)
+
+
+According to the features importance graphic, it is possible to infer that Delinquency and Balance variables had more relevance for this model.
+
+![image](https://user-images.githubusercontent.com/105675184/181684176-e5ee897b-8648-4579-b1f6-115c436172f2.png)
+
 
 --- LOST DATA ---
 
@@ -326,10 +378,15 @@ The overall score for the predictive model developed in this analysis was 0.75.
 
 ## Learnings & Conclusions
 
-- Specifically for competitions, dropping rows due to null values, can lead you to a predictive model without scores.
-- 
+- When manipulating large datasets, it is possible to make use of alternative tools, such as Dask;
+- Specifically for competitions, dropping rows due to null values, can lead you to a predictive model without scores;
+- In this study, Logistic Regression combined with PCA reductions leaves too much gaps for the company to lose money;
+- Light Gradient Boost Machine proved to be the best model to all the relevant metrics;
+- The most important features are related to Balance and Deliquency variables.
 
 ## Next steps
+
+Go back to data manipulation step and treat nulls with other strategies such as median, mode and KNN Imputer and compare the score with the developed models.
 
 
 
