@@ -303,114 +303,6 @@ The data had to be exported and imported due to Pycaret running in a different e
       <td id="T_86267_row4_col7" class="data row4 col7">0.6874</td>
       <td id="T_86267_row4_col8" class="data row4 col8">67.5600</td>
     </tr>
-    <tr>
-      <th id="T_86267_level0_row5" class="row_heading level0 row5">lda</th>
-      <td id="T_86267_row5_col0" class="data row5 col0">Linear Discriminant Analysis</td>
-      <td id="T_86267_row5_col1" class="data row5 col1">0.8800</td>
-      <td id="T_86267_row5_col2" class="data row5 col2">0.9427</td>
-      <td id="T_86267_row5_col3" class="data row5 col3">0.7447</td>
-      <td id="T_86267_row5_col4" class="data row5 col4">0.7806</td>
-      <td id="T_86267_row5_col5" class="data row5 col5">0.7622</td>
-      <td id="T_86267_row5_col6" class="data row5 col6">0.6821</td>
-      <td id="T_86267_row5_col7" class="data row5 col7">0.6824</td>
-      <td id="T_86267_row5_col8" class="data row5 col8">9.5800</td>
-    </tr>
-    <tr>
-      <th id="T_86267_level0_row6" class="row_heading level0 row6">ridge</th>
-      <td id="T_86267_row6_col0" class="data row6 col0">Ridge Classifier</td>
-      <td id="T_86267_row6_col1" class="data row6 col1">0.8792</td>
-      <td id="T_86267_row6_col2" class="data row6 col2">0.8275</td>
-      <td id="T_86267_row6_col3" class="data row6 col3">0.7206</td>
-      <td id="T_86267_row6_col4" class="data row6 col4">0.7927</td>
-      <td id="T_86267_row6_col5" class="data row6 col5">0.7549</td>
-      <td id="T_86267_row6_col6" class="data row6 col6">0.6750</td>
-      <td id="T_86267_row6_col7" class="data row6 col7">0.6764</td>
-      <td id="T_86267_row6_col8" class="data row6 col8">4.5000</td>
-    </tr>
-    <tr>
-      <th id="T_86267_level0_row7" class="row_heading level0 row7">ada</th>
-      <td id="T_86267_row7_col0" class="data row7 col0">Ada Boost Classifier</td>
-      <td id="T_86267_row7_col1" class="data row7 col1">0.8790</td>
-      <td id="T_86267_row7_col2" class="data row7 col2">0.9418</td>
-      <td id="T_86267_row7_col3" class="data row7 col3">0.7471</td>
-      <td id="T_86267_row7_col4" class="data row7 col4">0.7758</td>
-      <td id="T_86267_row7_col5" class="data row7 col5">0.7612</td>
-      <td id="T_86267_row7_col6" class="data row7 col6">0.6802</td>
-      <td id="T_86267_row7_col7" class="data row7 col7">0.6804</td>
-      <td id="T_86267_row7_col8" class="data row7 col8">455.2000</td>
-    </tr>
-    <tr>
-      <th id="T_86267_level0_row8" class="row_heading level0 row8">svm</th>
-      <td id="T_86267_row8_col0" class="data row8 col0">SVM - Linear Kernel</td>
-      <td id="T_86267_row8_col1" class="data row8 col1">0.8752</td>
-      <td id="T_86267_row8_col2" class="data row8 col2">0.8333</td>
-      <td id="T_86267_row8_col3" class="data row8 col3">0.7466</td>
-      <td id="T_86267_row8_col4" class="data row8 col4">0.7644</td>
-      <td id="T_86267_row8_col5" class="data row8 col5">0.7554</td>
-      <td id="T_86267_row8_col6" class="data row8 col6">0.6716</td>
-      <td id="T_86267_row8_col7" class="data row8 col7">0.6717</td>
-      <td id="T_86267_row8_col8" class="data row8 col8">8.3800</td>
-    </tr>
-    <tr>
-      <th id="T_86267_level0_row9" class="row_heading level0 row9">nb</th>
-      <td id="T_86267_row9_col0" class="data row9 col0">Naive Bayes</td>
-      <td id="T_86267_row9_col1" class="data row9 col1">0.8528</td>
-      <td id="T_86267_row9_col2" class="data row9 col2">0.9120</td>
-      <td id="T_86267_row9_col3" class="data row9 col3">0.7017</td>
-      <td id="T_86267_row9_col4" class="data row9 col4">0.7209</td>
-      <td id="T_86267_row9_col5" class="data row9 col5">0.7111</td>
-      <td id="T_86267_row9_col6" class="data row9 col6">0.6124</td>
-      <td id="T_86267_row9_col7" class="data row9 col7">0.6125</td>
-      <td id="T_86267_row9_col8" class="data row9 col8">1.4400</td>
-    </tr>
-    <tr>
-      <th id="T_86267_level0_row10" class="row_heading level0 row10">knn</th>
-      <td id="T_86267_row10_col0" class="data row10 col0">K Neighbors Classifier</td>
-      <td id="T_86267_row10_col1" class="data row10 col1">0.8472</td>
-      <td id="T_86267_row10_col2" class="data row10 col2">0.7770</td>
-      <td id="T_86267_row10_col3" class="data row10 col3">0.6320</td>
-      <td id="T_86267_row10_col4" class="data row10 col4">0.7384</td>
-      <td id="T_86267_row10_col5" class="data row10 col5">0.6811</td>
-      <td id="T_86267_row10_col6" class="data row10 col6">0.5814</td>
-      <td id="T_86267_row10_col7" class="data row10 col7">0.5844</td>
-      <td id="T_86267_row10_col8" class="data row10 col8">8.9500</td>
-    </tr>
-    <tr>
-      <th id="T_86267_level0_row11" class="row_heading level0 row11">qda</th>
-      <td id="T_86267_row11_col0" class="data row11 col0">Quadratic Discriminant Analysis</td>
-      <td id="T_86267_row11_col1" class="data row11 col1">0.8428</td>
-      <td id="T_86267_row11_col2" class="data row11 col2">0.9081</td>
-      <td id="T_86267_row11_col3" class="data row11 col3">0.6480</td>
-      <td id="T_86267_row11_col4" class="data row11 col4">0.7162</td>
-      <td id="T_86267_row11_col5" class="data row11 col5">0.6804</td>
-      <td id="T_86267_row11_col6" class="data row11 col6">0.5765</td>
-      <td id="T_86267_row11_col7" class="data row11 col7">0.5778</td>
-      <td id="T_86267_row11_col8" class="data row11 col8">25.2900</td>
-    </tr>
-    <tr>
-      <th id="T_86267_level0_row12" class="row_heading level0 row12">dt</th>
-      <td id="T_86267_row12_col0" class="data row12 col0">Decision Tree Classifier</td>
-      <td id="T_86267_row12_col1" class="data row12 col1">0.8295</td>
-      <td id="T_86267_row12_col2" class="data row12 col2">0.7788</td>
-      <td id="T_86267_row12_col3" class="data row12 col3">0.6738</td>
-      <td id="T_86267_row12_col4" class="data row12 col4">0.6686</td>
-      <td id="T_86267_row12_col5" class="data row12 col5">0.6712</td>
-      <td id="T_86267_row12_col6" class="data row12 col6">0.5561</td>
-      <td id="T_86267_row12_col7" class="data row12 col7">0.5561</td>
-      <td id="T_86267_row12_col8" class="data row12 col8">314.3300</td>
-    </tr>
-    <tr>
-      <th id="T_86267_level0_row13" class="row_heading level0 row13">dummy</th>
-      <td id="T_86267_row13_col0" class="data row13 col0">Dummy Classifier</td>
-      <td id="T_86267_row13_col1" class="data row13 col1">0.7418</td>
-      <td id="T_86267_row13_col2" class="data row13 col2">0.5000</td>
-      <td id="T_86267_row13_col3" class="data row13 col3">0.0000</td>
-      <td id="T_86267_row13_col4" class="data row13 col4">0.0000</td>
-      <td id="T_86267_row13_col5" class="data row13 col5">0.0000</td>
-      <td id="T_86267_row13_col6" class="data row13 col6">0.0000</td>
-      <td id="T_86267_row13_col7" class="data row13 col7">0.0000</td>
-      <td id="T_86267_row13_col8" class="data row13 col8">0.0300</td>
-    </tr>
   </tbody>
 </table>
 
@@ -425,6 +317,11 @@ lgbm = create_model('lightgbm')
 final_lgbm = finalize_model(lgbm)
 tuned_model = tune_model(lgbm, optimize='AUC')
 ```
+
+--- LOST DATA ---
+
+The tuned model was then used to predict the probabilities of future defaults for each customer. By appending the `.predict_proba`s to the test dataset, it is now possible to upload the new model in Amex Challenge in Kaggle.
+
 
 ## Considerações finais
 
